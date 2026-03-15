@@ -1,0 +1,25 @@
+File System
+
+- follows a hierarchical tree structure and all files and dirs originate from a single root dir
+
+- Structure 
+
+    * Logical File System: acts as a interface between user application and the file system and ensures apps interact with files in way where you do not have to worry about storage details (focused on open, read, write, and close operations) 
+    * Virtual File System: makes file operations uniform and compatible, regardless of the underlying file system format (abstract layer)
+    * Physical File System: directly interacts with the hardware and disk storage 
+
+- /root: base point and the root user has access under this dir
+- /bin: contains essential cmds and binaries 
+- /boot: stores all files required for booting the system
+- /dev: stores special files for interfacing between hardware and software
+- /etc: files that control the behavior of the system and installed software
+- /home: places to store personal files 
+- /lib: stores essential shared libraries and kernel modules required during boot
+- /media: automatic mount point for removeable devices
+- /mnt: used to temporarily mount filesystems as needed
+- /opt: install optional add-on packages from third-parties
+- /sbin: contains tools used for root user/ sys admin
+- /srv: store site-specific data that is served by the system
+- /tmp: storing temp files created by the system and are short-lived after sys reboot
+- /usr: secondary hierarchy for read-only user data and contains the majority of utilities and apps 
+- /proc: provides information about the system proccesses 
