@@ -1,0 +1,21 @@
+File Management
+
+- Linux treats everything as a file, including devices and sys configs
+
+- types of files:
+	* General - data like documents, programs, or scripts 
+	* Directory - stores a list of files names and metadata
+	* Device - found mostly in /dev/ and represent hardware devices and handle I/O oepration
+
+File Permissions
+
+- basic permissions:
+	* Read - view file content
+	* Write - modify a file 
+	* Execute - runa file 
+
+- permissions are assigned to 3 categories of users:
+	* User - person who created the file
+	* Group - users belonging to a shared group
+	* Others - everyone else on the system
+
