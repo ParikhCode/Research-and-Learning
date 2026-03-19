@@ -1,0 +1,11 @@
+Scripting
+
+- Shebang is a char sequence placed at the beginning of a script
+	* starts with #! and is followed path to intepreter
+- scripts can use variables to store and manipulate data
+	* 'read' - takes user input and store it into a variable (read name)
+	* '$' can retrieve the variable ($name)
+- use chmod to change perissions of bash file (Ex: chmod +x dummy.sh)
+- error handling ensures scripts run properly and give helpful feedback 
+	* scripts can check exit codes to determine if a command succeeded
+
