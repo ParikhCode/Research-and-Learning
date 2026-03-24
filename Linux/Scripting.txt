@@ -1,5 +1,8 @@
 Scripting
 
+- shell scripting is the process of writing a series of commands in a text file that a computer's cmd-line interpreter exucutes automatically
+	* streamlines workflows, automates repetitive tasks, adn links different system cmd together
+	* Ex of Shells: BASH (Bourne Again Shell)
 - Shebang is a char sequence placed at the beginning of a script
 	* starts with #! and is followed path to intepreter
 - scripts can use variables to store and manipulate data
@@ -8,4 +11,19 @@ Scripting
 - use chmod to change perissions of bash file (Ex: chmod +x dummy.sh)
 - error handling ensures scripts run properly and give helpful feedback 
 	* scripts can check exit codes to determine if a command succeeded
-
+- Environment Variables
+	* automatically passed to child proccesses created from that shell
+	* usually written in uppercase
+	* control behavior of the shell and apps
+- Built-in shell vars
+	* provided by shell itself
+	* used to access system and script-related info
+	* Ex: 
+		- $SHELL
+		- $HOSTNAME
+		- $?
+- Shell vs Bash
+	* sh - is the original Bourne Shell
+		- focuses on portability and minimalism
+	* bash - is the extended version of sh with more features
+		- provides advanced scripting and other capabilites
