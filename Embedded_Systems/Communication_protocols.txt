@@ -1,0 +1,35 @@
+*** UART Protocol ***
+
+- Universal Asynchronous Receiver Transmitter
+- can be applied to any transmitter and receiver
+- cannot use clock signal for communication
+- established for serial communication
+
+- two wire are established (transmission and reception)
+- Configuration of UART needs to be done before, such as:
+	1. Devices with the UART protcol should know the speed of data transmission (Baud Rate)
+	2. Configure the data length of both devices
+	3. Check data tranmission/ receiving time, forward start bits, and stop bits
+- data format
+	- sent in frames
+	- common config includes: 8 data bits, no parity, 1 stop bit
+	- components of UART Frame:
+		* Start bit - notfies receiver a packet is arriving
+		* Data bits (5-9 bits) - actual data and LSB
+		* Parity bit (optional) - error detection; either none, even, or odd number
+		* Stop Bit - signal end of frame
+	- frame visualized:
+		* [IDLE] [START] [D0] [D1] [D2] [D3] [D4] [D5] [D6] [D7] [D8] [Par] [Stop] [Idle]
+
+
+*** I2C ***
+
+
+
+
+
+*** SPI ***
+
+
+
+*** CAN Bus/ LIN
