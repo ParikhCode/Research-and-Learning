@@ -33,3 +33,19 @@
 
 
 *** CAN Bus/ LIN
+
+- described as a message-based protocol
+- Control Area Network bus 
+- common automotive industrial systems
+- facilitates efficient communication between sensors and electronic control units (ECUs)
+- messages/ frames are received by all devices in the network
+	* frames are prioritized by ID numbers
+	* types of frames - data, remote, error, adn overload
+- the bus (electrical wires) provides 1 point of entry to communciate with all network ECUs
+- CAN allows devices in a shared network to communicate with each other
+- devices on a bus are called nodes
+	* each nodes consists of a CPU, CAN controller and receiver
+	* all nodes can send and recieve data, but not at the same time
+- data format
+	* [SOF] [ID] [RTR] [IDE] [R0] [DLC] [Data Field] [CRC] [ACK] [EOF] [IFS]
+	* can not send data directly to a node, but instead onto the network entirely
